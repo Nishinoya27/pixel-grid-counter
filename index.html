@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pixel Grid Counter</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <script async src="https://docs.opencv.org/4.x/opencv.js"></script>
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>Pixel Grid Counter</h1>
+
+    <p>
+        Upload a graph-paper pixel art image.
+    </p>
+
+    <input
+        type="file"
+        id="imageInput"
+        accept="image/*">
+
+    <br><br>
+
+    <canvas id="canvas"></canvas>
+
+    <div class="results">
+
+        <h2>Result</h2>
+
+        <p>
+            Horizontal Boxes :
+            <span id="horizontal">-</span>
+        </p>
+
+        <p>
+            Vertical Boxes :
+            <span id="vertical">-</span>
+        </p>
+
+        <p>
+            Grid Spacing :
+            <span id="spacing">-</span>
+        </p>
+
+        <button id="analyze">
+            Analyze Image
+        </button>
+
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
